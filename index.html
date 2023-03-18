@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Selector Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/15181efa86.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <noscript
+      ><meta http-equiv="refresh" content="0; url=no-JavaScript-index.html"
+    /></noscript>
+  </head>
+
+  <body>
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">Welcome to Movie Selector</h1>
+          <h2 class="subtitle">
+            A simple web-page to get the movie <br />
+            that you want to watch.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="parallax-2" class="hero is-large ">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-6">
+              <h1 class="title is-1">Movie selector page</h1>
+              <p class="subtitle">
+                On this page we will give you an option to select a movie from our database <br />
+                so that you dont have to worry about the hassle of searching for a movie. <br/>
+                If you are interested in a random movie you are on the right page we provide <br/>
+                movies depending on your preferences and ratings from Rotten Tomatoes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="parallax-1" class="hero is-large">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-6 is-offset-6">
+              <h1 class="title is-1">Select the Genre, Year and Rating</h1>
+              <form name="genre" id="myForm">
+                <select name="genre" id="genreSel" size="1">
+                  <option value="" selected="selected">Select genre</option>
+                </select>
+                <br />
+                <br />
+                <select name="year" id="yearSel" size="1">
+                  <option value="" selected="selected">
+                    Please select genre first
+                  </option>
+                </select>
+                <br />
+                <br />
+                <select name="rating" id="ratingSel" size="1">
+                  <option value="" selected="selected">
+                    Please select year first
+                  </option>
+                </select>
+              </form>
+              <img id="moviePictcure" src=media/logo.png>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta va">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6">
+            <h1 class="title is-1">Form</h1>
+            <hr class="content-divider" />
+            <h2 class="subtitle">
+              To recieve the movie link you need to fill out the form (think of
+              it like borrowing a movie).Reason for taking your name is to know
+              who has the copy at what time and e-mail is for sending you the
+              link to the online player which will play your movie.
+            </h2>
+          </div>
+          <div class="column is-6">
+            <div id="storageDiv" class="field">
+              <label class="label">Chosen options:</label>
+              <input id="options" class="input is-small" type="text" disabled />
+            </div>
+            <fieldset></fieldset>
+            <input id="select" type="submit" value="submit" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Made by Luka Mavrin with Bulma.</p>
+      </div>
+    </footer>
+    <!--link to the object which contains all of the data for the selects-->
+    <script src="js/selectData.js"></script>
+    <!--link to the creator of the selectors-->
+    <script src="js/createSelects.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
